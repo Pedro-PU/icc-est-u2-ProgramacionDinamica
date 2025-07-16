@@ -27,7 +27,7 @@ public class MazeSolverRecursivo implements MazeSolver {
             path.add(start);
             return true;
         }
-        if(findPath(grid,new Cell(row + 1, col),end,path)){
+        if(findPath(grid,new Cell(row, col+1),end,path)){
             path.add(start);
             return true;
         }

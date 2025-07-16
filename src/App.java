@@ -34,7 +34,7 @@ public class App {
         maze.printMaze();
 
         Cell start = new Cell(0,0);
-        Cell end = new Cell(0,0);
+        Cell end = new Cell(3,3);
         List<MazeSolver> solvers = Arrays.asList(new MazeSolverRecursivo());
 
         MazeSolver solver = solvers.get(0);
