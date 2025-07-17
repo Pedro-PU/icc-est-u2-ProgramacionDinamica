@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class App {
@@ -38,8 +39,7 @@ public class App {
         List<MazeSolver> solvers = Arrays.asList(new MazeSolverRecursivo());
 
         MazeSolver solver = solvers.get(0);
-        List<Cell> path;
-        path = solver.getPath(maze.getMaze(), start, end);
+        List<Cell> path = solver.getPath(maze.getMaze(), start, end);
 
         System.out.println("Camino encontrado: ");
         System.out.println(path);
